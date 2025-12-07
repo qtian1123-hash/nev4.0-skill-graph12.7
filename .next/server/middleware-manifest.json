@@ -1,33 +1,6 @@
 {
   "version": 3,
   "middleware": {},
-  "functions": {
-    "/api/gemini/route": {
-      "files": [
-        "server/server-reference-manifest.js",
-        "server/app/api/gemini/route_client-reference-manifest.js",
-        "server/middleware-build-manifest.js",
-        "server/middleware-react-loadable-manifest.js",
-        "server/next-font-manifest.js",
-        "server/interception-route-rewrite-manifest.js",
-        "server/edge-runtime-webpack.js",
-        "server/app/api/gemini/route.js"
-      ],
-      "name": "app/api/gemini/route",
-      "page": "/api/gemini/route",
-      "matchers": [
-        {
-          "regexp": "^/api/gemini$",
-          "originalSource": "/api/gemini"
-        }
-      ],
-      "wasm": [],
-      "assets": [],
-      "env": {
-        "__NEXT_BUILD_ID": "development",
-        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "S21XrnU1YXPCGIYciT+7sre6Qn3BkEZIE0mZdnCOW8A="
-      }
-    }
-  },
+  "functions": {},
   "sortedMiddleware": []
 }

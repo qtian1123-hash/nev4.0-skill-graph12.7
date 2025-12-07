@@ -11,7 +11,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ user }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const [logoSrc, setLogoSrc] = useState<string | null>(null); // Use null to default to text if no image
+  const [logoSrc, setLogoSrc] = useState<string | null>('/App logo.png'); // Use null to default to text if no image
 
   const handleLogoClick = () => {
     fileInputRef.current?.click();
@@ -82,7 +82,7 @@ const Header: React.FC<HeaderProps> = ({ user }) => {
           </div>
           <div className="relative">
             <img 
-              src={user.avatarUrl} 
+              src="/avatar1.png"
               alt="Avatar" 
               className="w-9 h-9 rounded-full border border-slate-700 object-cover"
             />
